@@ -1,0 +1,49 @@
+<div class="xp d-flex flex-column  align-items-center py-5">
+    <div class="d-flex flex-column align-items-center card-style mb-5" data-aos="fade-up" data-aos-offset="200"
+        data-aos-duration="2000">
+        <p class="text-center">
+            Como dijimos previamente, nos consideramos una comunidad. Esto significa que estamos abiertos a sugerencias
+            y reclamos por parte de ustedes.
+            Podrán dejarnos un mensaje a continuación. Recuerden es importante que sus datos sean verdaderos para
+            ponernos en contacto.
+        </p>
+        <img [src]="image" alt="">
+        <button class="but" (click)="scroll(formulario)">
+            <h5>Contacto</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+            </svg>
+        </button>
+    </div>
+    <div class="my-5 form-style" data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000">
+        <form class="d-flex flex-column" [formGroup]="group" (submit)="sendEmail($event)" #formulario>
+            <label>Nombre</label>
+            <input class="mt-3" name="from_name" formControlName="from_name" autocomplete="false" type="text">
+
+            <label for="">Email</label>
+            <input class="mt-3" name="email_id" formControlName="email_id" autocomplete="false" type="text">
+            <label for="">Mensaje</label>
+            <textarea class="mt-3" autocomplete="false" name="message" formControlName="message"></textarea>
+            <div>
+                <div class="alert alert-danger" [hidden]="name?.valid || name?.pristine">El
+                    nombre es requerido</div>
+                <div class="alert alert-danger" [hidden]="email?.valid ||  email?.pristine || name?.invalid">
+                    <span *ngIf="email?.errors?.['required']">El email es obligatorio</span>
+                    <span *ngIf="email?.errors?.['email']">El email debe ser válido</span>
+                </div>
+                <div class="alert alert-danger"
+                    [hidden]="message?.valid || message?.pristine || name?.invalid || email?.invalid">
+                    <span *ngIf="message?.errors?.['required']">El mensaje es obligatorio</span>
+                </div>
+            </div>
+            <button class="mt-3 button-form" [disabled]="group.invalid">Enviar</button>
+            <img class="gif" [src]="image2" alt="">
+
+        </form>
+
+
+    </div>
+
+</div>

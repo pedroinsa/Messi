@@ -1,0 +1,86 @@
+.xp {
+    background-image: url('../../../../assets/contacto/inter.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    width: 70%;
+    height: 60%;
+}
+
+/* .gif {
+    width: 200px;
+    height: 200px;
+} */
+.gif {
+    align-self: center;
+}
+
+.card-style {
+
+    width: 50%;
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #4286f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #373B44, #4286f4);
+    border: 3px solid white;
+    opacity: 0.83;
+    color: white;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.button-form {
+    margin-bottom: 10px;
+    /* background-color: rgb(15, 164, 228); */
+    background-color: #4286f4;
+    color: white
+}
+.button-form:disabled{
+   background-color: rgba(15, 164, 228, 0.1);
+}
+.but{
+    margin-top: 8px;
+    border-radius: 4%;
+    background: #4286f4;
+    border: 1px solid white;
+    color: white;
+}
+
+ 
+
+.form-style {
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #4286f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #373B44, #4286f4);
+    opacity: 0.93;
+    padding: 15px;
+    color: white;
+}
+
+p {
+    width: 70%;
+}
+
+
+@media(max-width: 910px) {
+    .xp {
+        background-position: center;
+    }
+}
+
+
+@media(max-width:460px) {
+    .card-style {
+        width: 100%;
+    }
+}
+@media(max-width: 281px){
+    .form-style{
+        width: 95%;
+    }
+}

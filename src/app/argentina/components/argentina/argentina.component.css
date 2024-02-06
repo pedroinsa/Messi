@@ -1,0 +1,19 @@
+.xp {
+    background-image: url('../../../../assets/argentina/vista.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+@media(max-width: 912px) {
+    .xp {
+        /* background-repeat: repeat;
+    
+        background-size: cover; */
+        background-position: center
+    }
+}

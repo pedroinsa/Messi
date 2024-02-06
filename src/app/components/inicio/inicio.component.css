@@ -1,0 +1,70 @@
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.inicio {
+    width: 70%;
+    /* height: 80%; */
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #4286f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #373B44, #4286f4);
+    color: white;
+    opacity: 0.95;
+    max-height: 450px;
+    padding-left: 10px;
+    border: 3px solid white;
+
+
+}
+
+.imagen-class {
+    width: 40%;
+    height: 75%;
+}
+
+.xp {
+    background-image: url("../../../assets/inicio/picturez.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 110vh; */
+
+
+}
+
+.video {
+    height: 315px;
+    width: 460px;
+}
+@media (max-width: 550px){
+    .video{
+        width: 50%;
+    }
+}
+@media(max-width: 415px) {
+    .grupo-menor {
+        flex-direction: column;
+    }
+
+    .inicio {
+        max-height: 600px;
+
+    }
+
+    .video {
+        width: 60%;
+        height: 200px
+    }
+}
+
+@media(max-width: 300px) {
+    .inicio {
+        max-height: 800px;
+    }
+}

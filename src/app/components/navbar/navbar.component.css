@@ -1,0 +1,30 @@
+nav {
+   
+    background: #373B44;
+
+    background: -webkit-linear-gradient(to right, #373B44, #4286f4);
+  
+    background: linear-gradient(to right, #373B44, #4286f4);
+
+   
+}
+
+a {
+    color: white
+}
+
+.messi-brand{
+    color: white;
+}
+.nav-link:hover{
+    color:#4286f4;
+}
+.nav.item:active{
+  border: none
+}
+
+
+img{
+    height: 70px;
+    width: 70px
+}

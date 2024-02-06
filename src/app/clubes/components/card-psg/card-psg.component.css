@@ -1,0 +1,47 @@
+img {
+    width: 80%;
+    height: 80%;
+}
+
+.card-style {
+    background: linear-gradient(rgb(80, 6, 6) 1%, rgb(80, 6, 6) 10%, rgb(151, 10, 10) 51%, rgb(3, 3, 81) 56%);
+    /* background: black; */
+    border: 5px solid black;
+}
+
+p {
+    color: white;
+}
+
+@media(min-width:200px) {
+    .card-style {
+        margin: 7px;
+        width: 240px;
+        height: 350px;
+    }
+}
+
+
+@media(min-width: 300px) {
+    .card-style {
+        margin: 7px;
+        width: 270px;
+        height: 350px;
+    }
+}
+
+@media(min-width: 750px) {
+    .card-style {
+        margin: 10px;
+        width: 310px;
+        height: 300px;
+    }
+}
+
+@media(min-width: 1250px) {
+    .card-style {
+        margin: 10px;
+        width: 350px;
+        height: 340px;
+    }
+}

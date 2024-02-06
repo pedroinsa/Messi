@@ -1,0 +1,25 @@
+.card-style {
+    width: 100%;
+    /* background: linear-gradient(black 5%, red 35%, black 50%); */
+    background: linear-gradient(white 0%,rgb(41, 41, 125) 2%, rgb(41, 41, 125) 5%, rgb(41, 41, 125) 8%, red 12%, white 15%);
+    color: black;
+    border: 4px solid;
+    opacity: 0.93;
+    border-radius: 3%;
+}
+
+h1{
+    color: red
+}
+.barca{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    z-index: 9999;
+    left: 10px;
+}
+@media(max-width: 280){
+    .card-style{
+        width: 99%;
+    }
+}

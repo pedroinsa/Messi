@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos'
 
 @Component({
   selector: 'app-familia',
@@ -20,4 +21,8 @@ export class FamiliaComponent {
   { text: "Lionel junto a su familia cerrando un gran año. La sonrisa de Leo refleja lo que disfruta estar con ellos." },
   { text: "Messi disfrutando de su cumpleaños número 36. Fue el primer 24 de junio como campeón del mundo. " }]
 
+  ngOnInit(): void {
+    AOS.init()
+    window.addEventListener("load", AOS.refresh)
+  }
 }

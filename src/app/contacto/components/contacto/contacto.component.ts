@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import Swal from "sweetalert2";
 import * as AOS from 'aos'
 
 
@@ -37,14 +38,18 @@ export class ContactoComponent implements OnInit {
     e.preventDefault();
     emailjs.sendForm('service_mbcz84h', 'template_q78zbit', e.target as HTMLFormElement, 'LXzfmdMKNU6SPWeox')
       .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Tu mail ha sido enviado!",
+        });
       }, (error) => {
         console.log(error.text);
       });
+
   }
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
-  
+
 
 }

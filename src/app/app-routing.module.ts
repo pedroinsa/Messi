@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: "familia", loadChildren: () => import("./familia/familia.module").then(m => m.FamiliaModule) },
   { path: "clubes", loadChildren: () => import("./clubes/clubes.module").then(m => m.ClubesModule) },
   { path: "argentina", loadChildren: () => import("./argentina/argentina.module").then(m => m.ArgentinaModule) },
-  { path: "contacto", loadChildren: () => import("./contacto/contacto.module").then(m => m.ContactoModule) }
+  { path: "contacto", loadChildren: () => import("./contacto/contacto.module").then(m => m.ContactoModule) },
+  { path: "**", redirectTo: "home" }
 
 ];
 

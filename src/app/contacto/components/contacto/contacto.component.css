@@ -30,6 +30,7 @@ img {
     color: white;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    /* height: 530px; */
 }
 
 .button-form {
@@ -38,10 +39,12 @@ img {
     background-color: #4286f4;
     color: white
 }
-.button-form:disabled{
-   background-color: rgba(15, 164, 228, 0.1);
+
+.button-form:disabled {
+    background-color: rgba(15, 164, 228, 0.1);
 }
-.but{
+
+.but {
     margin-top: 8px;
     border-radius: 4%;
     background: #4286f4;
@@ -49,7 +52,7 @@ img {
     color: white;
 }
 
- 
+
 
 .form-style {
     background: #373B44;
@@ -79,8 +82,9 @@ p {
         width: 100%;
     }
 }
-@media(max-width: 281px){
-    .form-style{
+
+@media(max-width: 281px) {
+    .form-style {
         width: 95%;
     }
 }
